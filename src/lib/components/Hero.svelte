@@ -6,21 +6,20 @@
 	<div class="max-w-[1400px] mx-auto px-6">
 		<div class="max-w-4xl">
 			<h1 class="text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.1] font-serif font-normal tracking-tight mb-8">
-				Get <span class="italic font-light font-serif">client deliverables</span><br />
-				done with AI
+				Local-first AI systems<br />
+				<span class="italic font-light font-serif">shaped by real work</span>
 			</h1>
 
 			<p class="text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed font-light font-sans">
-				Accelerate work with AI agents that collaborate, automate,
-				and think alongside your teams.
+				Fast to deploy, fully contained, under your control. Custom AI systems that run entirely inside your environment—built from your workflows, deployed by forward-deployed engineers.
 			</p>
 
 			<div class="flex flex-wrap gap-4 mb-20">
 				<button class="bg-[#3b82f6] hover:bg-blue-600 text-white px-8 py-4 rounded-full font-medium transition-colors text-base">
-					Book an intro
+					Start a conversation
 				</button>
 				<button class="bg-white/10 hover:bg-white/20 border border-white/10 text-white px-8 py-4 rounded-full font-medium transition-colors text-base">
-					Try it free
+					View case studies
 				</button>
 			</div>
 		</div>
@@ -29,7 +28,7 @@
 	<!-- Hero Image Container with Perspective -->
 	<div class="relative w-full max-w-[1400px] mx-auto px-6 perspective-container">
 		<div class="relative transform-3d hero-image-container origin-top opacity-90 hover:opacity-100 transition-opacity duration-700">
-			<!-- Dashboard Mockup -->
+			<!-- Terminal/Infrastructure Mockup -->
 			<div class="rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-[#0a0a0a] aspect-[16/10] relative">
 				<!-- Top bar -->
 				<div class="h-10 bg-[#111] border-b border-white/5 flex items-center px-4 gap-2">
@@ -39,44 +38,78 @@
                         <div class="w-3 h-3 rounded-full bg-green-500/20"></div>
                     </div>
                     <div class="mx-auto w-1/3 h-6 bg-white/5 rounded-md text-[10px] flex items-center justify-center text-gray-500 font-mono">
-                        sana.ai/dashboard
+                        localhost:8080
                     </div>
 				</div>
-				<!-- Content Mockup -->
+				<!-- Terminal Content -->
 				<div class="flex h-full">
                     <!-- Sidebar -->
                     <div class="w-64 border-r border-white/5 bg-[#0f0f0f] p-4 hidden md:block">
-                        <div class="space-y-4">
-                            <div class="h-8 w-full bg-white/5 rounded"></div>
-                            <div class="space-y-2 mt-8">
-                                <div class="h-4 w-3/4 bg-white/5 rounded opacity-50"></div>
-                                <div class="h-4 w-1/2 bg-white/5 rounded opacity-50"></div>
-                                <div class="h-4 w-2/3 bg-white/5 rounded opacity-50"></div>
+                        <div class="space-y-3">
+                            <div class="text-[10px] text-gray-500 font-mono mb-4">PROJECT STRUCTURE</div>
+                            <div class="flex items-center gap-2 text-[10px] text-gray-400 font-mono">
+                                <span class="text-blue-400">📁</span> /orchestration
+                            </div>
+                            <div class="flex items-center gap-2 text-[10px] text-gray-400 font-mono pl-3">
+                                <span class="text-green-400">📄</span> workflow.py
+                            </div>
+                            <div class="flex items-center gap-2 text-[10px] text-gray-400 font-mono">
+                                <span class="text-blue-400">📁</span> /models
+                            </div>
+                            <div class="flex items-center gap-2 text-[10px] text-gray-400 font-mono pl-3">
+                                <span class="text-green-400">📄</span> local_llm.py
+                            </div>
+                            <div class="flex items-center gap-2 text-[10px] text-gray-400 font-mono">
+                                <span class="text-blue-400">📁</span> /monitoring
+                            </div>
+                            <div class="flex items-center gap-2 text-[10px] text-gray-400 font-mono">
+                                <span class="text-green-400">📄</span> docker-compose.yml
                             </div>
                         </div>
                     </div>
-                    <!-- Main Content -->
-                    <div class="flex-1 p-8 bg-[#0a0a0a]">
-                        <div class="flex justify-between items-end mb-8">
-                            <div>
-                                <div class="h-10 w-64 bg-white/10 rounded mb-2"></div>
-                                <div class="h-4 w-48 bg-white/5 rounded"></div>
-                            </div>
-                            <div class="h-10 w-32 bg-blue-500/20 rounded"></div>
+                    <!-- Main Terminal -->
+                    <div class="flex-1 p-6 bg-[#0a0a0a] font-mono text-[11px] leading-relaxed">
+                        <div class="text-green-400 mb-4">$ greyhaven deploy --env production</div>
+                        <div class="text-gray-500 space-y-1">
+                            <div>→ Initializing self-hosted infrastructure...</div>
+                            <div>→ Loading custom workflow models...</div>
+                            <div class="text-blue-400">✓ Local LLM deployed (client environment)</div>
+                            <div class="text-blue-400">✓ Orchestration layer active</div>
+                            <div class="text-blue-400">✓ Monitoring stack running</div>
+                            <div class="text-green-400 mt-4">✓ System operational - all data local</div>
                         </div>
                         
-                        <div class="grid grid-cols-3 gap-6 mb-8">
-                            <div class="bg-[#111] p-4 rounded-lg border border-white/5 h-32"></div>
-                            <div class="bg-[#111] p-4 rounded-lg border border-white/5 h-32"></div>
-                            <div class="bg-[#111] p-4 rounded-lg border border-white/5 h-32"></div>
+                        <div class="mt-8 grid grid-cols-3 gap-4">
+                            <div class="bg-[#111] p-3 rounded border border-white/5">
+                                <div class="text-[9px] text-gray-500 mb-1">LATENCY</div>
+                                <div class="text-green-400 text-lg">24ms</div>
+                            </div>
+                            <div class="bg-[#111] p-3 rounded border border-white/5">
+                                <div class="text-[9px] text-gray-500 mb-1">UPTIME</div>
+                                <div class="text-green-400 text-lg">99.9%</div>
+                            </div>
+                            <div class="bg-[#111] p-3 rounded border border-white/5">
+                                <div class="text-[9px] text-gray-500 mb-1">DATA LOCATION</div>
+                                <div class="text-blue-400 text-lg">LOCAL</div>
+                            </div>
                         </div>
 
-                        <div class="bg-[#111] rounded-lg border border-white/5 h-64 w-full p-6 relative overflow-hidden">
-                             <!-- Chart Mockup -->
-                             <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-blue-500/10 to-transparent"></div>
-                             <svg class="w-full h-full text-blue-500/50" viewBox="0 0 100 50" preserveAspectRatio="none">
-                                 <path d="M0 50 L10 40 L20 45 L30 30 L40 35 L50 20 L60 25 L70 15 L80 20 L90 10 L100 5 V50 H0 Z" fill="currentColor" />
-                             </svg>
+                        <div class="mt-6 bg-[#111] rounded border border-white/5 p-4">
+                            <div class="text-[9px] text-gray-500 mb-2">SYSTEM STATUS</div>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between text-[10px]">
+                                    <span class="text-gray-400">Custom workflow engine</span>
+                                    <span class="text-green-400">● ACTIVE</span>
+                                </div>
+                                <div class="flex items-center justify-between text-[10px]">
+                                    <span class="text-gray-400">Open-source stack</span>
+                                    <span class="text-green-400">● ACTIVE</span>
+                                </div>
+                                <div class="flex items-center justify-between text-[10px]">
+                                    <span class="text-gray-400">Client-controlled deployment</span>
+                                    <span class="text-green-400">● ACTIVE</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,16 +120,16 @@
 		</div>
 	</div>
     
-    <!-- Client Logos -->
+    <!-- Industry Focus -->
     <div class="max-w-[1400px] mx-auto px-6 mt-20">
-        <div class="flex flex-wrap justify-center md:justify-between items-center gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-            <!-- Simple text placeholders for logos as SVGs are complex to recreate perfectly without assets -->
-            <span class="text-xl font-bold font-sans">piab</span>
-            <span class="text-xl font-bold font-serif italic">Hinge Health</span>
-            <span class="text-xl font-bold font-sans tracking-widest">swile</span>
-            <span class="text-xl font-bold font-serif">josh bersin</span>
-            <span class="text-xl font-bold font-sans">Polestar</span>
-            <span class="text-xl font-bold font-sans">Electrolux Group</span>
+        <p class="text-center text-sm text-gray-500 mb-6 uppercase tracking-wider">Built for data-sensitive environments</p>
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60">
+            <span class="text-base font-medium font-sans text-gray-400">Public Sector</span>
+            <span class="text-base font-medium font-sans text-gray-400">Healthcare</span>
+            <span class="text-base font-medium font-sans text-gray-400">Legal</span>
+            <span class="text-base font-medium font-sans text-gray-400">Defense</span>
+            <span class="text-base font-medium font-sans text-gray-400">Research</span>
+            <span class="text-base font-medium font-sans text-gray-400">Infrastructure</span>
         </div>
     </div>
 </section>

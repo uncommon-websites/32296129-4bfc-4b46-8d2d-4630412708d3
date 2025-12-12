@@ -5,73 +5,90 @@
 <section class="py-24 bg-black text-white">
 	<div class="max-w-[1400px] mx-auto px-6">
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <!-- UI Mockup -->
-			<div class="bg-[#0f0f0f] rounded-xl p-12 border border-white/5 relative overflow-hidden h-[600px] flex items-center justify-center">
-                <div class="w-full max-w-sm bg-white rounded-xl shadow-2xl overflow-hidden text-black">
-                    <div class="p-2 border-b border-gray-100 flex justify-between items-center">
-                        <div class="flex items-center gap-2 px-2">
-                            <div class="w-4 h-4 rounded-full bg-gray-200"></div>
-                            <span class="text-sm font-medium">Auto</span>
-                        </div>
-                        <div class="text-xs text-gray-400 px-2">Auto</div>
-                    </div>
-                    
-                    <div class="p-2">
-                        <div class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg mb-1">
-                            <div class="w-4 h-4 rounded-full border border-gray-300 mt-1 flex items-center justify-center">
-                                <div class="w-2 h-2 bg-black rounded-full"></div>
-                            </div>
-                            <div>
-                                <div class="text-sm font-medium">Auto</div>
-                                <div class="text-xs text-gray-500">The most suitable model for the job</div>
-                            </div>
-                            <Check size={16} class="ml-auto text-black" />
-                        </div>
-
-                        <div class="flex items-start gap-3 p-3 hover:bg-gray-50 rounded-lg mb-1 opacity-50">
-                            <div class="w-4 h-4 rounded-full border border-gray-300 mt-1"></div>
-                            <div>
-                                <div class="text-sm font-medium">GPT-4</div>
-                                <div class="text-xs text-gray-500">Flagship GPT model for complex tasks</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-3 p-3 hover:bg-gray-50 rounded-lg mb-1 opacity-50">
-                            <div class="w-4 h-4 rounded-full border border-gray-300 mt-1"></div>
-                            <div>
-                                <div class="text-sm font-medium">Claude Sonnet 3.5</div>
-                                <div class="text-xs text-gray-500">Anthropic's flagship model, industry-leading for coding tasks</div>
-                            </div>
-                        </div>
-                        
-                         <div class="flex items-start gap-3 p-3 hover:bg-gray-50 rounded-lg mb-1 opacity-50">
-                            <div class="w-4 h-4 rounded-full border border-gray-300 mt-1"></div>
-                            <div>
-                                <div class="text-sm font-medium">Claude Haiku 3.5</div>
-                                <div class="text-xs text-gray-500">Fast responses with near-frontier intelligence</div>
-                            </div>
-                        </div>
-
-                         <div class="flex items-start gap-3 p-3 hover:bg-gray-50 rounded-lg opacity-50">
-                            <div class="w-4 h-4 rounded-full border border-gray-300 mt-1"></div>
-                            <div>
-                                <div class="text-sm font-medium">GPT-4o mini</div>
-                                <div class="text-xs text-gray-500">Balanced for speed and cost efficiency</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-			</div>
-
             <!-- Text Content -->
 			<div>
 				<h2 class="text-4xl md:text-5xl lg:text-6xl font-serif font-normal mb-6 leading-tight">
-					Only use the AI models<br />
-					that work best for you
+					Your infrastructure,<br />
+					your control
 				</h2>
-				<p class="text-gray-400 text-lg max-w-md">
-					With Sana, you can choose and switch between leading models as you need.
+				<p class="text-gray-400 text-lg max-w-md mb-8">
+					Deploy any model—open-source or commercial—entirely within your environment. No data ever leaves your perimeter.
 				</p>
+				
+				<div class="space-y-4">
+					<div class="flex items-start gap-3">
+						<div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 mt-1">✓</div>
+						<div>
+							<div class="text-white font-medium mb-1">Model Flexibility</div>
+							<div class="text-sm text-gray-400">Run any open-source LLM or bring your own API keys</div>
+						</div>
+					</div>
+					
+					<div class="flex items-start gap-3">
+						<div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 mt-1">✓</div>
+						<div>
+							<div class="text-white font-medium mb-1">Complete Ownership</div>
+							<div class="text-sm text-gray-400">All models, data, and execution stay in your infrastructure</div>
+						</div>
+					</div>
+					
+					<div class="flex items-start gap-3">
+						<div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 mt-1">✓</div>
+						<div>
+							<div class="text-white font-medium mb-1">No Vendor Lock-in</div>
+							<div class="text-sm text-gray-400">Open-source stack means you're never dependent on us</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+            <!-- Infrastructure Diagram -->
+			<div class="bg-[#0f0f0f] rounded-xl p-12 border border-white/5 relative overflow-hidden h-[600px] flex items-center justify-center">
+                <div class="w-full space-y-6">
+					<div class="text-center mb-8">
+						<div class="text-sm text-gray-500 mb-2">YOUR INFRASTRUCTURE</div>
+						<div class="text-xs text-blue-400 font-mono">100% Self-Hosted</div>
+					</div>
+					
+					<div class="space-y-4">
+						<div class="bg-[#1a1a1a] border border-blue-500/30 rounded-lg p-6">
+							<div class="flex items-center justify-between mb-3">
+								<div class="text-white font-medium">Application Layer</div>
+								<div class="w-2 h-2 rounded-full bg-green-400"></div>
+							</div>
+							<div class="text-xs text-gray-500 font-mono">Custom workflows • Orchestration • APIs</div>
+						</div>
+						
+						<div class="bg-[#1a1a1a] border border-blue-500/30 rounded-lg p-6">
+							<div class="flex items-center justify-between mb-3">
+								<div class="text-white font-medium">Model Layer</div>
+								<div class="w-2 h-2 rounded-full bg-green-400"></div>
+							</div>
+							<div class="text-xs text-gray-500 font-mono">Local LLMs • Vector DB • Embeddings</div>
+						</div>
+						
+						<div class="bg-[#1a1a1a] border border-blue-500/30 rounded-lg p-6">
+							<div class="flex items-center justify-between mb-3">
+								<div class="text-white font-medium">Data Layer</div>
+								<div class="w-2 h-2 rounded-full bg-green-400"></div>
+							</div>
+							<div class="text-xs text-gray-500 font-mono">PostgreSQL • Redis • Object storage</div>
+						</div>
+						
+						<div class="bg-[#1a1a1a] border border-blue-500/30 rounded-lg p-6">
+							<div class="flex items-center justify-between mb-3">
+								<div class="text-white font-medium">Infrastructure Layer</div>
+								<div class="w-2 h-2 rounded-full bg-green-400"></div>
+							</div>
+							<div class="text-xs text-gray-500 font-mono">Kubernetes • Docker • Monitoring</div>
+						</div>
+					</div>
+					
+					<div class="text-center pt-6 border-t border-white/5">
+						<div class="text-xs text-gray-600 font-mono">← No external API calls</div>
+						<div class="text-xs text-gray-600 font-mono">← Zero data exfiltration</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

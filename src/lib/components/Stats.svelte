@@ -8,13 +8,13 @@
 			<!-- Stat 1 -->
 			<div class="flex flex-col h-full justify-between group cursor-pointer">
 				<p class="text-sm text-gray-400 mb-8 leading-relaxed">
-					Global law firm automates compiling and analysis of legal docs
+					From initial conversation to working prototype
 				</p>
 				<div>
-					<div class="text-5xl md:text-6xl font-normal mb-2 tracking-tight">62%</div>
+					<div class="text-5xl md:text-6xl font-normal mb-2 tracking-tight">48h</div>
 					<div class="flex items-center gap-2">
-						<div class="w-2 h-2 rounded-full bg-green-500"></div>
-						<span class="text-xs font-semibold tracking-wider text-gray-400 uppercase">Time Savings</span>
+						<div class="w-2 h-2 rounded-full bg-blue-500"></div>
+						<span class="text-xs font-semibold tracking-wider text-gray-400 uppercase">Prototype Delivery</span>
 					</div>
 				</div>
 			</div>
@@ -22,13 +22,13 @@
 			<!-- Stat 2 -->
 			<div class="flex flex-col h-full justify-between group cursor-pointer">
 				<p class="text-sm text-gray-400 mb-8 leading-relaxed">
-					European fintech scales up uses AI agent for new hire onboarding
+					All data, models, and execution stay within your infrastructure
 				</p>
 				<div>
-					<div class="text-5xl md:text-6xl font-normal mb-2 tracking-tight">10h</div>
+					<div class="text-5xl md:text-6xl font-normal mb-2 tracking-tight">100%</div>
 					<div class="flex items-center gap-2">
-						<div class="w-2 h-2 rounded-full bg-green-500"></div>
-						<span class="text-xs font-semibold tracking-wider text-gray-400 uppercase">Per Week/Employee Saved</span>
+						<div class="w-2 h-2 rounded-full bg-blue-500"></div>
+						<span class="text-xs font-semibold tracking-wider text-gray-400 uppercase">Data Sovereignty</span>
 					</div>
 				</div>
 			</div>
@@ -36,13 +36,13 @@
 			<!-- Stat 3 -->
 			<div class="flex flex-col h-full justify-between group cursor-pointer">
 				<p class="text-sm text-gray-400 mb-8 leading-relaxed">
-					Leading Swedish mining manufacturer automates R&D analysis workflows
+					Open-source stack hardened over years of production use
 				</p>
 				<div>
-					<div class="text-5xl md:text-6xl font-normal mb-2 tracking-tight">50%</div>
+					<div class="text-5xl md:text-6xl font-normal mb-2 tracking-tight">8+</div>
 					<div class="flex items-center gap-2">
-						<div class="w-2 h-2 rounded-full bg-green-500"></div>
-						<span class="text-xs font-semibold tracking-wider text-gray-400 uppercase">Time Savings</span>
+						<div class="w-2 h-2 rounded-full bg-blue-500"></div>
+						<span class="text-xs font-semibold tracking-wider text-gray-400 uppercase">Years Battle-Tested</span>
 					</div>
 				</div>
 			</div>
@@ -50,26 +50,16 @@
 			<!-- Stat 4 -->
 			<div class="flex flex-col h-full justify-between group cursor-pointer">
 				<p class="text-sm text-gray-400 mb-8 leading-relaxed">
-					Industrial market leader uses AI agent to augment customer support
+					Forward-deployed engineers embedded with your team
 				</p>
 				<div>
-					<div class="text-5xl md:text-6xl font-normal mb-2 tracking-tight">2x</div>
+					<div class="text-5xl md:text-6xl font-normal mb-2 tracking-tight">1-3</div>
 					<div class="flex items-center gap-2">
-						<div class="w-2 h-2 rounded-full bg-green-500"></div>
-						<span class="text-xs font-semibold tracking-wider text-gray-400 uppercase">Number of Issues Resolved</span>
+						<div class="w-2 h-2 rounded-full bg-blue-500"></div>
+						<span class="text-xs font-semibold tracking-wider text-gray-400 uppercase">Months to Production</span>
 					</div>
 				</div>
 			</div>
 		</div>
-
-        <!-- Navigation Buttons -->
-        <div class="flex justify-end gap-2 mt-12">
-            <button class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors">
-                <ArrowLeft size={16} />
-            </button>
-            <button class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors">
-                <ArrowRight size={16} />
-            </button>
-        </div>
 	</div>
 </section>

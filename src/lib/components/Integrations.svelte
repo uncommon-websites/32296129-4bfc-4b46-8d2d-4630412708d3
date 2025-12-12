@@ -1,64 +1,63 @@
 <script lang="ts">
-    // Simple SVG paths for icons would be better, but for now using colored squares/circles to mimic brand colors
-    const integrations = [
-        { name: 'Google Drive', color: 'bg-green-500' },
-        { name: 'Teams', color: 'bg-indigo-500' },
-        { name: 'Slack', color: 'bg-purple-500' },
-        { name: 'Salesforce', color: 'bg-blue-400' },
-        { name: 'HubSpot', color: 'bg-orange-500' },
-        { name: 'ServiceNow', color: 'bg-green-700' },
-        { name: 'SharePoint', color: 'bg-teal-600' },
-        { name: 'OneDrive', color: 'bg-blue-600' },
-        { name: 'Outlook', color: 'bg-blue-500' },
-        { name: 'Workday', color: 'bg-blue-700' },
-        { name: 'Figma', color: 'bg-purple-400' },
-        { name: 'GitHub', color: 'bg-white' },
-        { name: 'Zendesk', color: 'bg-green-400' },
-        { name: 'Gmail', color: 'bg-red-500' },
-        { name: 'Confluence', color: 'bg-blue-300' },
-        { name: 'Jira', color: 'bg-blue-500' }
+    const infrastructure = [
+        { name: 'Docker', icon: '🐳' },
+        { name: 'Kubernetes', icon: '☸️' },
+        { name: 'PostgreSQL', icon: '🐘' },
+        { name: 'Redis', icon: '📦' },
+        { name: 'Nginx', icon: '🔧' },
+        { name: 'Python', icon: '🐍' },
+        { name: 'TypeScript', icon: '📘' },
+        { name: 'Prometheus', icon: '📊' },
+        { name: 'Grafana', icon: '📈' },
+        { name: 'Elasticsearch', icon: '🔍' },
+        { name: 'RabbitMQ', icon: '🐰' },
+        { name: 'Terraform', icon: '🏗️' },
+        { name: 'Ansible', icon: '⚙️' },
+        { name: 'GitLab', icon: '🦊' },
+        { name: 'Vector DB', icon: '🗄️' },
+        { name: 'LangChain', icon: '🔗' }
     ];
 
     const security = [
-        'Custom user roles', 'SCIM provisioning', 'Advanced permissions', 'Private LLMs', 
-        'SOC 2 Type 2', 'GDPR compliant', 'ISO 27001', 'Encryption', 
-        'SAML single sign-on', 'Domain verification', 'Regional deploys', 'Audit logging'
+        'Zero data exfiltration', 'Self-hosted models', 'Air-gapped deployment', 'Full audit logs', 
+        'SOC 2 compliant', 'GDPR ready', 'HIPAA capable', 'End-to-end encryption', 
+        'Role-based access', 'Network isolation', 'On-premise deployment', 'Custom compliance'
     ];
 </script>
 
-<section class="py-24 bg-black text-white">
+<section class="py-24 bg-black text-white" id="security">
 	<div class="max-w-[1400px] mx-auto px-6 text-center">
 		<h2 class="text-4xl md:text-5xl lg:text-6xl font-serif font-normal mb-6">
-			Enterprise-grade<br />
-			integrations and security
+			Open-source stack<br />
+			battle-tested infrastructure
 		</h2>
 		<p class="text-gray-400 text-lg max-w-2xl mx-auto mb-20">
-			Sana connects with 100+ applications and unifies your company's data securely.
+			Built on proven technologies, hardened over 8+ years, deployed entirely within your environment.
 		</p>
 
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
-            <!-- Integrations -->
+            <!-- Infrastructure Stack -->
 			<div>
                 <div class="inline-block bg-[#3b82f6] text-white text-[10px] font-bold px-3 py-1 rounded-full mb-8 tracking-wide uppercase">
-                    Connect your daily tools seamlessly
+                    Open-source infrastructure
                 </div>
                 
                 <div class="grid grid-cols-4 gap-4">
-                    {#each integrations as tool}
+                    {#each infrastructure as tool}
                         <div class="aspect-square bg-[#111] rounded-xl border border-white/5 flex flex-col items-center justify-center p-2 hover:bg-[#1a1a1a] transition-colors group">
-                            <div class="w-8 h-8 rounded-lg {tool.color} mb-3 flex items-center justify-center opacity-80 group-hover:opacity-100 transition-opacity">
-                                <!-- Simple icon placeholder -->
+                            <div class="text-2xl mb-2 opacity-80 group-hover:opacity-100 transition-opacity">
+                                {tool.icon}
                             </div> 
-                            <span class="text-[10px] text-gray-400 font-medium">{tool.name}</span>
+                            <span class="text-[10px] text-gray-400 font-medium text-center">{tool.name}</span>
                         </div>
                     {/each}
                 </div>
             </div>
 
-            <!-- Security -->
+            <!-- Security & Compliance -->
 			<div>
                 <div class="inline-block bg-[#3b82f6] text-white text-[10px] font-bold px-3 py-1 rounded-full mb-8 tracking-wide uppercase">
-                    Security you can stand by
+                    Security & Compliance
                 </div>
                 
                 <div class="grid grid-cols-4 gap-4">
